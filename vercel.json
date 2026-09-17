@@ -1,0 +1,16 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/autopost",
+      "schedule": "0 18 * * *"
+    }
+  ],
+  "functions": {
+    "app/api/render/route.ts": {
+      "maxDuration": 300
+    },
+    "app/api/cron/autopost/route.ts": {
+      "maxDuration": 60
+    }
+  }
+}
